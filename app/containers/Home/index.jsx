@@ -10,6 +10,7 @@ class Home extends React.Component {
         this.shouldComponentUpdate = PureRenderMixin.shouldComponentUpdate.bind(this);
     }
     render() {
+        console.log('this.props.userinfo.cityName=',this.props.userinfo)
         return (
             <div>
                 <HomeHeader cityName={this.props.userinfo.cityName}/>

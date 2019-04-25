@@ -33,7 +33,7 @@ class App extends React.Component {
         if (cityName == null) {
             cityName = '深圳';
         }
-        console.log('====this.props.userInfoActions='+this.props.userInfoActions)
+        console.log('====cityName='+cityName)
         this.props.userInfoActions.update({
             cityName: cityName
         })
