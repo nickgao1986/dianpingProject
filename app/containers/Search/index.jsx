@@ -13,6 +13,12 @@ class Search extends React.Component {
             </div>
         )
     }
+
+    componentDidMount() {
+        const params = this.props.params;
+        console.log('params=' + params.type);
+        console.log('params1=' + params.keyword);
+    }
 }
 
 // 使用 require.ensure 异步加载，还不支持 ES6 的 export 
