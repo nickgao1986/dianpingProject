@@ -1,6 +1,7 @@
 import './style.less'
 import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
+import { hashHistory } from 'react-router'
 class Header extends React.Component {
     constructor(props, context) {
         super(props, context);
@@ -20,6 +21,7 @@ class Header extends React.Component {
 
     clickHandle() {
         const backRouter = this.props.backRouter
+        console.log('backRouter',backRouter);
         if (backRouter) {
             hashHistory.push(hashHistory)
         } else {
